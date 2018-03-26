@@ -3,7 +3,7 @@
 /*
 드로우에추가해라
 draw_self()
-draw_text_color(instance_number(button),x,y,c_black,c_black,c_black,c_black,1)
+draw_text_color(instance_number(button),100,40,c_black,c_black,c_black,c_black,1)
 */
 if(position_meeting(mouse_x,mouse_y,player)&&mouse_check_button_released(mb_left))
 {
