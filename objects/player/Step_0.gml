@@ -1,11 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*
-드로우에추가해라
-draw_self()
-draw_text_color(instance_number(button),100,40,c_black,c_black,c_black,c_black,1)
-draw_text_color(button.count,200,40,c_black,c_black,c_black,c_black,1)
-*/
+
 if(position_meeting(mouse_x,mouse_y,player)&&mouse_check_button_released(mb_left))
 {
 	c=1;
