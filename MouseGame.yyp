@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "099eba16-4d21-48e4-a03e-e2e769f98377",
+            "Value": {
+                "id": "622e7d2f-33c3-47cd-9521-923d6efd64a0",
+                "resourcePath": "rooms\\Main_Menu\\Main_Menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0b2f9020-7e01-4ee2-b2e4-fda5dc48ec2a",
             "Value": {
                 "id": "7534637a-fafc-4af6-86bc-617a38c225a1",
@@ -556,6 +564,14 @@
                 "id": "288dcf54-e277-4473-8de9-70fcc36bbd88",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "ead45a3e-1fbd-43e0-872e-e91115c5530c",
+            "Value": {
+                "id": "0d62b16a-0e15-45af-be50-abafad4d084a",
+                "resourcePath": "objects\\main_MouseGame\\main_MouseGame.yy",
+                "resourceType": "GMObject"
             }
         },
         {
