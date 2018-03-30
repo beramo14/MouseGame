@@ -11,7 +11,7 @@
  	if(delay<0)
  	{
  			image_index = 0;
-			delay=150;
+			delay=310;
  	}
 	if(instance_exists(water))
 	{
