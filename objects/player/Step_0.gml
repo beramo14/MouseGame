@@ -48,19 +48,24 @@ if(image_index==1)
 	delay-=1;
 	if(delay<1)
 	{
-		room_speed=60;
+		room_speed=64;
 		room_restart()
 	}	
 }
 
 
-//터치 및 버그 방지 코드 
-if(abs(temp_x-x)>40||abs(temp_y-y)>40)  
+
+
+
+//////////터치 및 버그 방지 코드 ///////////
+
+if(abs(temp_x-x)>50||abs(temp_y-y)>50)  
 {
-	if(c==1&&collision_line(temp_x,temp_y,mouse_x,mouse_y,wall_parents,1,1)) //도는 벽 지나갈떄 버그있음 //고칠것
-	{
-		s=1
-	}
+	
+if(c==1&&collision_line(temp_x,temp_y,mouse_x,mouse_y,wall_parents,1,1)) //도는 벽 지나갈떄 버그있음 //고칠것//완료
+{
+	s=1
+}
 }
 switch(s)
 {
@@ -76,6 +81,8 @@ switch(s)
 	}
 }
 		
+
+
 
 
 
