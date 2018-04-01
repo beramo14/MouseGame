@@ -1,8 +1,19 @@
-/// @description Insert description here
-// You can write your code in this editor
+
+//글자 흔들기
 x+=random_range(-s,s);
 y+=random_range(-s,s);
-if(keyboard_check_pressed(vk_anykey))
+
+
+//개발자 모드 활성화
+if(!global.devmode&&keyboard_check_direct(vk_control)&&keyboard_check_direct(vk_alt)&&keyboard_check_pressed(ord("D"))&&show_question("개발자 모드를 활성화 하시겠습니까?"))
 {
-	room_goto_next();	
+	global.devmode=true;
+	show_message("개발자 모드 활성화");
+}
+
+//개발자 모드 비활성화
+if(global.devmode&&keyboard_check_direct(vk_control)&&keyboard_check_direct(vk_alt)&&keyboard_check_pressed(ord("D"))&&show_question("개발자 모드를 비활성화 하시겠습니까?"))
+{
+	global.devmode=false;
+	show_message("개발자 모드 비활성화");
 }

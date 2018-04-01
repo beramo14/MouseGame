@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "wall_spin_96",
     "eventList": [
-        
+        {
+            "id": "9eebdb2a-cabe-4a40-aca7-d76a11bd0caa",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "8e60e206-0bcc-4b64-bb71-b5cfcb8f6959"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

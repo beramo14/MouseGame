@@ -1,6 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
-//터치스크린 감지 시스템 만들기 한프레임에 좌표가 100이상 움직으면 터치로 인식
+
+//터치스크린 감지 시스템 만들기 한프레임에 좌표가 100이상 움직으면 터치로 인식 //완료
+
 if(position_meeting(mouse_x,mouse_y,player)&&mouse_check_button_released(mb_left))
 {
 	c=1;
@@ -13,11 +13,9 @@ if(c==1)
 	y=mouse_y;
 }
 
-
-
 if(!instance_exists(key)&&place_meeting(x,y,FinishLine_parents))
 {
-	room_goto_next()	
+	room_goto_next()
 }
 
 
@@ -56,14 +54,59 @@ if(image_index==1)
 }
 
 
-if(keyboard_check_released(ord("R")))
+//터치 및 버그 방지 코드 
+if(abs(temp_x-x)>40||abs(temp_y-y)>40)  
 {
-	game_restart()
+	if(c==1&&collision_line(temp_x,temp_y,mouse_x,mouse_y,wall_parents,1,1)) //도는 벽 지나갈떄 버그있음 //고칠것
+	{
+		s=1
+	}
+}
+switch(s)
+{
+	case 1 :
+	{
+		show_message("터치 또는 버그사용이 감지되었습니다.");
+		room_restart();
+	}
+	case 0:
+	{
+	temp_x=x;
+	temp_y=y;
+	}
+}
+		
+
+
+
+//////////////개발자 전용기능///////////
+
+//개발자 모드 활성화
+if(!global.devmode&&keyboard_check_direct(vk_control)&&keyboard_check_direct(vk_alt)&&keyboard_check_pressed(ord("D"))&&show_question("개발자 모드를 활성화 하시겠습니까?"))
+{
+
+	global.devmode=true;
+	show_message("개발자 모드 활성화");
+}
+
+//개발자 모드 비활성화
+if(global.devmode&&keyboard_check_direct(vk_control)&&keyboard_check_direct(vk_alt)&&keyboard_check_pressed(ord("D"))&&show_question("개발자 모드를 비활성화 하시겠습니까?"))
+{
+	global.devmode=false;
+	show_message("개발자 모드 비활성화");
 }
 
 
-
-if(keyboard_check_released(ord("N")))
-{
-	room_goto_next()
+if(global.devmode)//개발자용
+	{
+	if(keyboard_check_released(ord("R"))) 
+	{
+		game_restart()
+	}else if(keyboard_check_released(ord("N")))
+	{
+		room_goto_next()
+	}else if(keyboard_check_released(ord("B")))
+	{
+		room_goto_previous();
+	}
 }

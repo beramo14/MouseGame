@@ -1,0 +1,20 @@
+if(abs(temp_x-x)>50||abs(temp_y-y)>50)  //터치 및 버그 방지 코드 
+{
+	show_message("속도가 비이상적으로 빠름.");
+	room_restart();
+}else
+{
+temp_x=x;
+temp_y=y;
+}
+
+if(collision_line(temp_x,temp_y,x,y,wall_parents,0,1))
+{
+	show_message("터치 감지");
+	room_restart();
+}else
+{
+	temp_x=x;
+	temp_y=y;
+}
+
