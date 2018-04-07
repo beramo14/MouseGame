@@ -1,0 +1,16 @@
+//생성
+dirG=0;
+Partsys = part_system_create()
+particle = part_type_create()
+part_type_shape(particle,pt_shape_square)
+part_type_size(particle,0.09,0.3,0,0)
+part_type_scale(particle,1,1)
+part_type_color2(particle,c_aqua,c_white)
+part_type_alpha2(particle,1,0)
+part_type_speed(particle,1.5,1.5,0,0)
+part_type_direction(particle,0,359,0,0)
+part_type_orientation(particle,0,359,1,0,1)
+part_type_blend(particle,0)
+part_type_life(particle,20,60)
+PartEmt = part_emitter_create(Partsys)
+part_emitter_stream(Partsys,PartEmt,particle,3)

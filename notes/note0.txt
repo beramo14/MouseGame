@@ -1,20 +1,29 @@
-if(abs(temp_x-x)>50||abs(temp_y-y)>50)  //터치 및 버그 방지 코드 
-{
-	show_message("속도가 비이상적으로 빠름.");
-	room_restart();
-}else
-{
-temp_x=x;
-temp_y=y;
-}
 
-if(collision_line(temp_x,temp_y,x,y,wall_parents,0,1))
+//////////터치 및 버그 방지 코드 ///////////
+
+if(abs(temp_x-x)>50||abs(temp_y-y)>50)  
 {
-	show_message("터치 감지");
-	room_restart();
-}else
+	
+if(c==1&&collision_line(temp_x,temp_y,mouse_x,mouse_y,wall_parents,1,1)) //도는 벽 지나갈떄 버그있음 //고칠것//완료
 {
+	s=1
+}
+}
+switch(s)
+{
+	case 1 :
+	{
+		show_message("터치 또는 버그사용이 감지되었습니다.");
+		room_restart();
+	}
+	case 0:
+	{
 	temp_x=x;
 	temp_y=y;
+	}
 }
+		
+
+x += (mouse_x - x) / 3;
+y += (mouse_y - y) / 3;
 

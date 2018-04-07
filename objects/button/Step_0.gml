@@ -2,7 +2,8 @@
  // You can write your code in this editor
  if(place_meeting(x,y,player))
  {
- 		image_index = 1;	
+ 		image_index = 1;
+		delay=310;
  }
  
  if(image_index == 1)
@@ -18,7 +19,7 @@
 		water.image_alpha-=0.1;
 		if(water.image_alpha<0)
 		{
-		instance_deactivate_object(water);
+			instance_deactivate_object(water);
 		}
 	}
  }
