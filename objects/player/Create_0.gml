@@ -5,4 +5,5 @@ c=0;
 delay = 3;
 temp_x=x;
 temp_y=y;
-s=0
+s=0;
+tracking_mode=false;

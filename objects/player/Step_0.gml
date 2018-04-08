@@ -3,11 +3,11 @@
 
 if(position_meeting(mouse_x,mouse_y,player)&&mouse_check_button_released(mb_left))
 {
-	c=1;
-	sprite_index = spt0_mousePnt
+	tracking_mode=true;
+	sprite_index = spt0_mousePnt;
 	image_index=0;
 }
-if(c==1)
+if(tracking_mode==true)
 {
 	x += (mouse_x - x);
 	y += (mouse_y - y);
@@ -16,6 +16,7 @@ if(c==1)
 
 if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents))
 {
+
 	room_goto_next()
 }
 
@@ -26,7 +27,7 @@ if(place_meeting(x,y,wall_parents)&&sprite_index==spt0_mousePnt)
 }
 if(image_index==1)
 {
-	c=0;
+	tracking_mode=false;
 	room_speed=1;
 	delay-=1;
 	if(delay<1)
@@ -44,7 +45,7 @@ if(place_free(x,y)&&sprite_index==spt0_mousePnt)
 }
 if(image_index==1)
 {
-	c=0;
+	tracking_mode=false;
 	room_speed=1;
 	delay-=1;
 	if(delay<1)

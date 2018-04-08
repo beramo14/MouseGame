@@ -871,6 +871,14 @@
             }
         },
         {
+            "Key": "fcd4912d-aa8a-4ec0-8543-5f614b8218bb",
+            "Value": {
+                "id": "03177f29-94fd-4e33-81d1-53a53bf1c971",
+                "resourcePath": "objects\\count\\count.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fd3fcdf9-9b75-4f45-a656-e0403880f92d",
             "Value": {
                 "id": "3efe8691-38e2-45d7-a414-aa45ba726559",
