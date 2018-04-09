@@ -6,16 +6,17 @@ if(window_get_fullscreen()==true)
 	window_set_fullscreen(false);
 }
 
-//////////////강제 사이즈조절/////////////
-if((window_get_height()==room_height&&window_get_width()==room_width)==false)
+if(player.tracking_mode==false)
 {
-	window_set_size(room_width,room_height);
+	Gx=window_get_x();
+	Gy=window_get_y();
+	Rx=window_get_x();
+	Ry=window_get_y();
 }
 
 
-
 ////////////창랜덤 이동//////////////
-if(player.tracking_mode==true)//////버그 : 죽고나서 창옮기고 트래킹모드로 바뀌면 창이 옮기기전으로 이동함
+if(player.tracking_mode==true)//////버그 : 죽고나서 창옮기고 트래킹모드로 바뀌면 창이 옮기기전으로 이동함 //succsex
 {
 	window_set_position(window_get_x()+(Rx-window_get_x())/5,window_get_y()+(Ry-window_get_y())/5);
 	delay-=1;

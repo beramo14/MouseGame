@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "01b1340e-e1a8-460b-98a3-10971d6ac9d9",
+            "Value": {
+                "id": "960dafff-10ed-48d9-ba8b-36bf09e6f6ef",
+                "resourcePath": "objects\\dev_mode\\dev_mode.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "058ab3bf-5221-455c-8e55-b0ef6ad715cd",
             "Value": {
                 "id": "35554552-1c3d-4e86-8c7a-56d77d232bf1",
