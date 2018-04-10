@@ -1,12 +1,6 @@
 
 //터치스크린 감지 시스템 만들기 한프레임에 좌표가 100이상 움직으면 터치로 인식 //완료 //는 개뿔//는 해결이야 병신아 
 
-if(position_meeting(mouse_x,mouse_y,player)&&mouse_check_button_released(mb_left))
-{
-	tracking_mode=true;
-	sprite_index = spt0_mousePnt;
-	image_index=0;
-}
 if(tracking_mode==true)
 {
 	x=mouse_x;
@@ -14,21 +8,27 @@ if(tracking_mode==true)
 }
 
 
-if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents))
+if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents))////키를 다먹고 통과할때/////
 {
-
 	room_goto_next()
 }
+else if(instance_exists(key)==true&&place_meeting(x,y,FinishLine_parents))////키가 아직 남았는데 통과할때////
+{
+	image_index=1;	
+}
 
+/////벽에 충돌했을때/////
 if(place_meeting(x,y,wall_parents)&&sprite_index==spt0_mousePnt)
 {
 	image_index=1;
 }
 
+/////밖에 있을때/////
 if(place_free(x,y)&&sprite_index==spt0_mousePnt)
 {
 	image_index=1;
 }
+
 
 if(image_index==1)
 {
