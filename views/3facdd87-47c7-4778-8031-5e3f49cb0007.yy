@@ -13,7 +13,9 @@
         "13957794-cbdd-4396-9fef-af510614b0b4",
         "fead1985-6bb5-400a-8aa4-99389cf70681",
         "5699d1f1-f3de-4e3d-98c9-8d6c12c17a32",
-        "6a050e30-b046-4488-9259-881198f6449a"
+        "6a050e30-b046-4488-9259-881198f6449a",
+        "dcc86bd9-0b47-40fc-9240-9acdb8bbb563",
+        "7a3fd646-8345-4d9a-a85d-1f371a9f2844"
     ],
     "filterType": "GMSprite",
     "folderName": "spt_main_menu",

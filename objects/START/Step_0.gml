@@ -7,7 +7,3 @@ if(position_meeting(mouse_x,mouse_y,START)==true)
 }
 
 
-if(click_sens==true)
-{
-	
-}

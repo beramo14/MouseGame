@@ -1,1 +1,2 @@
-click_sens=true;
+
+room_goto(chapter_main);
