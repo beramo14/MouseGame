@@ -5,3 +5,9 @@ if(position_meeting(mouse_x,mouse_y,START)==true)
 {
 	sprite_index = spt_START;
 }
+
+
+if(click_sens==true)
+{
+	
+}

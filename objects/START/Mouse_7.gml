@@ -1,1 +1,1 @@
-room_goto_next();
+click_sens=true;
