@@ -8,7 +8,18 @@ if(tracking_mode==true)
 }
 
 
-if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents))////키를 다먹고 통과할때/////
+///////////미래의 내가 해야할거 : 챕터를 깨면 잠겨있던 다음챕터가 열림 // 키 챕터 맵 더 만들 것 // 
+
+if(room==global.chapter_player_last_room||room==global.chapter_key_last_room)
+{
+	if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents))
+	{
+		show_message("마지막 룸입니다!");
+		global.chapter_clear+=1;
+		room_goto(chapter_main);
+	}
+}
+else if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents)) ////키를 다먹고 통과할때/////
 {
 	room_goto_next();
 }
