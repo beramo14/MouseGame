@@ -10,12 +10,17 @@ if(tracking_mode==true)
 
 if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents))////키를 다먹고 통과할때/////
 {
-	room_goto_next()
+	room_goto_next();
 }
+
+
+
+
 else if(instance_exists(key)==true&&place_meeting(x,y,FinishLine_parents))////키가 아직 남았는데 통과할때////
 {
 	image_index=1;	
 }
+
 
 /////벽에 충돌했을때/////
 if(place_meeting(x,y,wall_parents)&&sprite_index==spt0_mousePnt)
