@@ -8,26 +8,61 @@ if(tracking_mode==true)
 }
 
 
+
+
+//////////터치 및 버그 방지 코드 ////////////
+
+
+keyboard_set_numlock(true); ///////넘패드 조작 방지///////
+
+if(abs(temp_x-x)>40||abs(temp_y-y)>40)  
+{
+	if(tracking_mode==true&&collision_line(temp_x,temp_y,mouse_x,mouse_y,wall_parents,1,1)) //도는 벽 지나갈떄 버그있음 //고칠것//완료
+	{
+		s=1;
+	}
+}
+if(abs(temp_x-x)>90||abs(temp_y-y)>90)
+{
+	s=1;
+}
+switch(s)
+{
+	case 1 :
+	{
+		image_index=1;
+	}
+	case 0:
+	{
+		temp_x=x;
+		temp_y=y;
+	}
+}
+
+
+
+
+
 ///////////미래의 내가 해야할거 : 챕터를 깨면 잠겨있던 다음챕터가 열림 // 키 챕터 맵 더 만들 것 // 
+
 
 if(room==global.chapter_player_last_room||room==global.chapter_key_last_room)
 {
-	if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents))
+	if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents)&&s!=1)
 	{
-		show_message("마지막 룸입니다!");
+		show_message("CHAPTER CLEAR!");
 		global.chapter_clear+=1;
+		global.chapter_clear_bool=true;
 		room_goto(chapter_main);
 	}
 }
-else if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents)) ////키를 다먹고 통과할때/////
+else if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents)&&s!=1) ////키를 다먹고 통과할때/////
 {
 	room_goto_next();
 }
 
 
-
-
-else if(instance_exists(key)==true&&place_meeting(x,y,FinishLine_parents))////키가 아직 남았는데 통과할때////
+if(instance_exists(key)==true&&place_meeting(x,y,FinishLine_parents))////키가 아직 남았는데 통과할때////
 {
 	image_index=1;	
 }
@@ -54,6 +89,7 @@ if(image_index==1)
 	if(delay<1)
 	{
 		room_speed=64;
+		global.total_death_count+=1;
 		global.death_count+=1;
 		room_restart()
 	}
@@ -61,28 +97,4 @@ if(image_index==1)
 
 
 
-//////////터치 및 버그 방지 코드 ////////////
 
-if(abs(temp_x-x)>50||abs(temp_y-y)>50)  
-{
-	if(tracking_mode==true&&collision_line(temp_x,temp_y,mouse_x,mouse_y,wall_parents,1,1)) //도는 벽 지나갈떄 버그있음 //고칠것//완료
-	{
-		s=1;
-	}
-}
-if(abs(temp_x-x)>100||abs(temp_y-y)>100)
-{
-	s=1;
-}
-switch(s)
-{
-	case 1 :
-	{
-		image_index=1;
-	}
-	case 0:
-	{
-		temp_x=x;
-		temp_y=y;
-	}
-}

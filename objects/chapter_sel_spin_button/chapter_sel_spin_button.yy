@@ -5,16 +5,6 @@
     "name": "chapter_sel_spin_button",
     "eventList": [
         {
-            "id": "9f248637-fee1-4468-9ddd-fabb4a56bca7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 6,
-            "m_owner": "4f73d9b0-97cf-4a14-a307-9ee2a90e0bfb"
-        },
-        {
             "id": "11d0f583-d791-4361-ba81-4ebf78308e74",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "4f73d9b0-97cf-4a14-a307-9ee2a90e0bfb"
+        },
+        {
+            "id": "57b29a46-158e-47b0-87d8-dd939e2ea027",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "4f73d9b0-97cf-4a14-a307-9ee2a90e0bfb"
         }
     ],

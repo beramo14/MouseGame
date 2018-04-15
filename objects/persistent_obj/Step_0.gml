@@ -1,2 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+
+if(global.chapter_clear_bool==true)
+{
+	global.death_count=0;
+	global.chapter_clear_bool=false;
+}

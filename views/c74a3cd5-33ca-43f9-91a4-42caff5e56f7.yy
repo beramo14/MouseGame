@@ -16,7 +16,9 @@
         "efdcc534-c8ef-45ff-b8ff-06a922d5f150",
         "55863441-f2ed-4eed-8e9c-6b2359562d57",
         "068ef95e-bf33-4522-b241-7ef745ef4166",
-        "1a0edf8a-cc08-4057-af0b-e8f47cc47bf6"
+        "1a0edf8a-cc08-4057-af0b-e8f47cc47bf6",
+        "cf38f5c6-6621-48f0-8c4c-7207e37f92c0",
+        "27380276-94ee-4e6f-9b5d-3e806cf3a543"
     ],
     "filterType": "GMSprite",
     "folderName": "spt_chapter_menu",
