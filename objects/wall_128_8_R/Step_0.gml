@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_angle -=4.2;
+if(global.pause_sens==false) image_angle -=4.2;

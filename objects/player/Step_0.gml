@@ -5,6 +5,9 @@ if(tracking_mode==true)
 {
 	x=mouse_x;
 	y=mouse_y;
+}else if(global.pause_sens==true)
+{
+	sprite_index=spt_mouseStart;
 }
 
 
@@ -41,9 +44,6 @@ switch(s)
 
 
 
-
-
-///////////미래의 내가 해야할거 : 챕터를 깨면 잠겨있던 다음챕터가 열림 // 키 챕터 맵 더 만들 것 // 
 
 
 if(room==global.chapter_player_last_room||room==global.chapter_key_last_room)
