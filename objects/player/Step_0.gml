@@ -45,21 +45,11 @@ switch(s)
 
 
 
+room_last_check(); //해야할거 : 끝까지 해서 알아봐 
 
-if(room==global.chapter_player_last_room||room==global.chapter_key_last_room)
-{
-	if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents)&&s!=1)
-	{
-		show_message("CHAPTER CLEAR!");
-		global.chapter_clear+=1;
-		global.chapter_clear_bool=true;
-		room_goto(chapter_main);
-	}
-}
-else if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents)&&s!=1) ////키를 다먹고 통과할때/////
-{
-	room_goto_next();
-}
+
+
+
 
 
 if(instance_exists(key)==true&&place_meeting(x,y,FinishLine_parents))////키가 아직 남았는데 통과할때////

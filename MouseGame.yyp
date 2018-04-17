@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "5589c0cd-64d9-463b-894a-c5ccb8787ceb",
+            "Value": {
+                "id": "be4387fc-2e6e-4903-92c4-19c55a4b6e65",
+                "resourcePath": "scripts\\room_last_check\\room_last_check.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "561e0ff7-30f9-4fea-925d-58e50e09d978",
             "Value": {
                 "id": "495a169a-965f-409a-b796-6e398d0cd107",
@@ -663,6 +671,14 @@
             }
         },
         {
+            "Key": "80aa8c27-2f76-4d1f-a57d-2c5867baa8a0",
+            "Value": {
+                "id": "255e08cc-9542-47c3-9c5c-2b7a7692a86e",
+                "resourcePath": "views\\80aa8c27-2f76-4d1f-a57d-2c5867baa8a0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "82660671-7de8-4879-b148-bc2968bbd045",
             "Value": {
                 "id": "1f3ce4d5-47c1-4365-b23c-33a31d06fa33",
@@ -851,6 +867,14 @@
             "Value": {
                 "id": "566fcbe6-4388-4df1-ac81-8c3fe5b48bc7",
                 "resourcePath": "rooms\\key_room3\\key_room3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "9ae10de2-7e31-4832-a7c8-d54f904fddb7",
+            "Value": {
+                "id": "1d59df6e-fb15-4985-92db-878b964d6dc2",
+                "resourcePath": "rooms\\key_room5\\key_room5.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1122,7 +1146,7 @@
             "Key": "f3d2e73c-0481-4ac2-96bd-dd9d0ded8023",
             "Value": {
                 "id": "cdbe35d8-64e9-46b9-9c44-bcba04083414",
-                "resourcePath": "rooms\\key_room5\\key_room5.yy",
+                "resourcePath": "rooms\\holdmap3\\holdmap3.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1192,7 +1216,7 @@
         }
     ],
     "script_order": [
-        
+        "5589c0cd-64d9-463b-894a-c5ccb8787ceb"
     ],
     "tutorial": ""
 }

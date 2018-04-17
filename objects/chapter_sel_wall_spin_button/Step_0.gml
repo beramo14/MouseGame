@@ -1,4 +1,4 @@
-if(global.chapter_clear>=4)
+if(global.chapter_button_clear==true)
 {
 	if(position_meeting(mouse_x,mouse_y,self)==true)
 	{
