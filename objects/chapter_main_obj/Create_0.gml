@@ -5,7 +5,6 @@ global.chapter_key_last_room=key_room5;
 //global.chapter_button_last_room=
 //global.chapter_wall_spin_last_room=
 
-
 global.chapter_player_clear=false;
 global.chapter_key_clear=false;
 global.chapter_spin_clear=false;
