@@ -1,6 +1,6 @@
 
 {
-    "name": "room8",
+    "name": "spin_room4",
     "id": "0107ddc4-08e6-48b5-8b7f-1f2fa4eb90dc",
     "creationCodeFile": "",
     "inheritCode": false,
