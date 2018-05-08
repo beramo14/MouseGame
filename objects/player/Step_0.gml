@@ -12,7 +12,6 @@ if(tracking_mode==true)
 
 
 
-
 //////////터치 및 버그 방지 코드 ////////////
 
 
@@ -48,7 +47,6 @@ room_last_check();
 
 
 
-
 if(instance_exists(key)==true&&place_meeting(x,y,FinishLine_parents))////키가 아직 남았는데 통과할때////
 {
 	image_index=1;	
@@ -81,7 +79,5 @@ if(image_index==1)
 		room_restart()
 	}
 }
-
-
 
 
