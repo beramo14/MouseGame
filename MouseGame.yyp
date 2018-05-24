@@ -162,7 +162,7 @@
             "Key": "13749258-bc2f-49b9-8b0b-eeab5ea9c109",
             "Value": {
                 "id": "d6cfcd6a-b4c1-4380-9456-1f2cd1a891d6",
-                "resourcePath": "rooms\\room14\\room14.yy",
+                "resourcePath": "rooms\\spin_room8\\spin_room8.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -220,6 +220,14 @@
                 "id": "401fbf1a-95b4-45a5-bba2-260bca056c7b",
                 "resourcePath": "objects\\chapter_sel_wall_spin_button\\chapter_sel_wall_spin_button.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1cd034c3-bf6b-48cb-8795-d0266af167b8",
+            "Value": {
+                "id": "2bfa2203-c33e-4d51-b147-c7e547d73821",
+                "resourcePath": "rooms\\spin_room7\\spin_room7.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -394,7 +402,7 @@
             "Key": "4192124e-6587-448d-9d7c-6c985658461e",
             "Value": {
                 "id": "21e6188a-a720-4766-ae5d-1ae3791995c8",
-                "resourcePath": "fonts\\font1\\font1.yy",
+                "resourcePath": "fonts\\Chapter_Font\\Chapter_Font.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -951,6 +959,22 @@
             }
         },
         {
+            "Key": "ad866602-e592-4fe6-bd76-deac8afb6c29",
+            "Value": {
+                "id": "1e138141-9543-442b-b2ed-e002d962b2bd",
+                "resourcePath": "fonts\\FPS_Font\\FPS_Font.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "ad9a7d62-5c70-4e6f-bce2-e6bab06723c3",
+            "Value": {
+                "id": "a2a99247-3fbe-43cb-b6c4-85844ca6d622",
+                "resourcePath": "scripts\\this_chapter\\this_chapter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b14da168-ae46-471d-8bc8-d324c4a29d64",
             "Value": {
                 "id": "ef341938-a441-45a3-80fb-b0e6686ffb7e",
@@ -1020,6 +1044,14 @@
                 "id": "7b1890c6-1f1f-484e-883d-4610702de7a6",
                 "resourcePath": "sprites\\spt_SETTING\\spt_SETTING.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c2f2bc52-9d27-4d0a-929d-54d326de81a5",
+            "Value": {
+                "id": "7835a47c-5dd7-42f5-afe5-fccd8097e5a5",
+                "resourcePath": "rooms\\spin_room6\\spin_room6.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1240,7 +1272,8 @@
         }
     ],
     "script_order": [
-        "5589c0cd-64d9-463b-894a-c5ccb8787ceb"
+        "5589c0cd-64d9-463b-894a-c5ccb8787ceb",
+        "ad9a7d62-5c70-4e6f-bce2-e6bab06723c3"
     ],
     "tutorial": ""
 }

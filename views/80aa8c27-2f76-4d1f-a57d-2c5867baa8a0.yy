@@ -11,7 +11,7 @@
         "1c03df5e-78a7-418f-ab69-59bb6e7451ff"
     ],
     "filterType": "GMObject",
-    "folderName": "shapter_sel_buutons",
+    "folderName": "chapter_sel_buttons",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

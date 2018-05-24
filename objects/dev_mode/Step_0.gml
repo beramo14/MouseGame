@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 //////////////개발자 전용기능//////////////
 
 //개발자 모드 활성화
@@ -19,16 +17,19 @@ if(global.devmode&&keyboard_check_direct(vk_control)&&keyboard_check_direct(vk_a
 
 if(global.devmode)//개발자용
 	{
-	if(keyboard_check_released(ord("R"))) 
+		if(keyboard_check_released(ord("R"))) 
 	{
 		game_restart()
-	}else if(keyboard_check_released(ord("N")))
+	}
+	else if(keyboard_check_released(ord("N")))
 	{
 		if(room==room_last)
 		{
 			show_message("마지막룸입니다");	
-		}else	room_goto_next();
-	}else if(keyboard_check_released(ord("B")))
+		}
+		else	room_goto_next();
+	}
+	else if(keyboard_check_released(ord("B")))
 	{
 		room_goto_previous();
 	}
