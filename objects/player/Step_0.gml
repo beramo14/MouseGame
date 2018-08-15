@@ -45,6 +45,9 @@ if(room_last_check())
 
 else if(instance_exists(key)==false&&place_meeting(x,y,FinishLine_parents)) ////키를 다먹고 통과할때/////
 {
+	tracking_mode = false;
+	
+	
 	room_goto_next();
 }
 
