@@ -82,7 +82,7 @@ if(image_index==1&&sprite_index==spt0_mousePnt)
 		room_speed=60;
 		global.total_death_count+=1; /////////후에 전적시스템도입 예정
 		global.death_count+=1;
-		room_restart()
+		room_restart();
 	}
 }
 

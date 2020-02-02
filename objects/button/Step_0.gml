@@ -5,7 +5,7 @@
  		image_index = 1;
 		delay=320;
  }
- 
+
  if(image_index == 1)
  {
  	delay-=1
@@ -23,7 +23,7 @@
 		}
 	}
  }
- 
+
  if(image_index == 0)
  {
 	instance_activate_object(water);
